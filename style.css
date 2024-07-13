@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, #CADEC8, #a3b3a1);
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Apply sans-serif font family to the entire body */
+}
+
+#title {
+  background: linear-gradient(#3E7E55, #336947);
+  color: #EAEEE5;
+  font-size: 2.2em; /* Slightly smaller font size */
+  font-weight: 600;
+  padding: 0.5em 2em; /* Reduce padding */
+  border-radius: 3px;
+  text-align: left; /* Left-align the title */
+  position: fixed; /* Fix position at the top */
+  top: 0;
+  left: 0;
+  box-shadow: 6px 6px 6px rgba(122, 122, 122, 0.336); /* Subtle shadow */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other content */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Title retains the serif font family */
+}
+
+header {
+  padding-top: 8em; /* Ensure content isn't hidden behind fixed header */
+}
+
+#blurb {
+  background-color: #AADCB6;
+  text-align: center;
+  margin: 1em auto;
+  width: 100%;
+  max-width: 500px;
+  padding: .5em;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px rgba(3, 3, 3, 0.438); /* Subtle shadow */
+  margin-top: 5em; /* Adjust margin to avoid content being hidden behind the navbar */
+}
+
+#visual-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-bottom: .5em;
+}
+
+#array-visual {
+  margin: 2em;
+}
+
+label {
+  display: inline-block; /* Changed to inline-block to align with input */
+  margin-right: 0.5em; /* Adjusted margin for spacing */
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Title retains the serif font family */
+  font-size: 1.5em;
+  color: #1d201e; /* Added color to label */
+}
+
+input[type="text"] {
+  margin: 1em auto;
+  padding: 0.5em;
+  width: 50%; /* Adjusted width for better alignment */
+  max-width: 600px;
+  border: 1px solid #bad3d0;
+  border-radius: 15px;
+  font-size: 1.1em;
+  box-shadow: 6px 6px 6px rgba(3, 3, 3, 0.438); /* Subtle shadow */
+  display: inline-block; /* Changed to inline-block for alignment */
+}
+
+#options {
+  margin: 2em auto; /* Increase margin for better spacing */
+}
+
+button {
+  background: linear-gradient(to bottom, #7ABD87, #69a374);
+  font-size: 1.2em;
+  color: #EAEEE5;
+  padding: 0.5em 1.5em; /* Increased padding for larger buttons */
+  border: none;
+  border-radius: 10px; /* More rounded corners */
+  font-weight: normal;
+  margin: 0.5em; /* Space between buttons */
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s; /* Smooth transition */
+  box-shadow: 6px 6px 6px rgba(3, 3, 3, 0.438); /* Subtle shadow */
+  
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Enlarge button */
+  background-color: #4ff170; /* Slightly darker background on hover */
+  box-shadow: 6px 6px 6px rgba(8, 0, 0, 0.1); /* Subtle shadow */ /* Deeper shadow on hover */
+}
+
+rect:hover, circle:hover, text.circle:hover, text.rect:hover {
+  cursor: pointer;
+}
+
+.subtext {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
